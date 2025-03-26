@@ -56,6 +56,8 @@ mv ivcon-ros2/ ivcon
 
 ```
 cd ~/bwi_ros2
+rosdep install --from-paths src -y --ignore-src
+colcon build
 source install/setup.bash
 ```
 
