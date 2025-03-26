@@ -69,7 +69,7 @@ source install/setup.bash
 
 ### Run the robot
 ```
-ros2 launch bwi_lauch segbot_v2.launch.py
+ros2 launch bwi_launch segbot_v2.launch.py
 ```
 ### Run the Azure camera drivers 
 ```
