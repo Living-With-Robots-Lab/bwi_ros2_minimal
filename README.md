@@ -39,12 +39,18 @@ cd ~/bwi_ros2/src
 git clone https://github.com/utexas-bwi/bwi_ros2_common.git
 ```
 
-### segway drivers:
+### (BWIBOTs V2s only) segway drivers:
 ```
 cd ~/bwi_ros2/src
 git clone https://github.com/utexas-bwi/libsegwayrmp_ros2.git
 mv libsegwayrmp_ros2/ libsegwayrmp
 git clone https://github.com/utexas-bwi/segway_rmp_ros2.git
+```
+
+### (BWIBOTs V4s and V5s only) segway drivers:
+```
+cd ~/bwi_ros2/src
+git clone https://github.com/Living-With-Robots-Lab/ros2segway.git
 ```
 
 ### other packages:
@@ -75,4 +81,6 @@ ros2 launch bwi_launch segbot_v2.launch.py
 ```
 ros2 launch azure_kinect_ros_driver driver.launch.py
 ```
+
+
 
