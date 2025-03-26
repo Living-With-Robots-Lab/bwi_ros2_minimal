@@ -3,11 +3,11 @@
 Please create a ros2 workspace using:
 ```
 echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
-mkdir bwi_ros2 
-cd bwi_ros2 
-mkdir src
-echo 'export COLCON_WS=~/bwi_ros2' >> ~/.bashrc
+mkdir bwi_ros2
+cd bwi_ros2
+echo 'export COLCON_WS=~/bwi_ros2' >> ~/.bashrc 
 source ~/.bashrc
+mkdir src
 ```
 
 ## Dependencies Installation:
@@ -16,10 +16,13 @@ source ~/.bashrc
 ```
 cd ~/bwi_ros2
 git clone https://github.com/utexas-bwi/serial_for_ros2.git
+```
 move 'serial' folder out of the 'serial_for_ros2' package and delete the 'serial_for_ros2' package
+```
 cd serial
 rm -rf build
 mkdir build
+cd build
 cmake ..
 make
 ```
@@ -56,6 +59,7 @@ mv ivcon-ros2/ ivcon
 
 ```
 cd ~/bwi_ros2
+rosdep update
 rosdep install --from-paths src -y --ignore-src
 colcon build
 source install/setup.bash
