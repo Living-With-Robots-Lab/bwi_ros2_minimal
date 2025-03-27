@@ -75,9 +75,11 @@ source install/setup.bash
 ## Run
 
 ### Run the robot
+V2s:
 ```
 ros2 launch bwi_launch segbot_v2.launch.py
 ```
+V4s and v5s: use segbot_v4 or segbot_v5 above
 ### Run the Azure camera drivers 
 ```
 ros2 launch azure_kinect_ros_driver driver.launch.py
