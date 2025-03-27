@@ -72,6 +72,8 @@ colcon build
 source install/setup.bash
 ```
 
+if <code>colcon build</code> fails on V2s then try this: <code>pip install --upgrade packaging --user </code>. Build once again.
+
 ## Run
 
 ### Run the robot
