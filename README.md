@@ -49,6 +49,7 @@ git clone https://github.com/utexas-bwi/segway_rmp_ros2.git
 
 ### (BWIBOTs V4s and V5s only) segway drivers:
 ```
+pip install pyserial
 cd ~/bwi_ros2/src
 git clone https://github.com/Living-With-Robots-Lab/ros2segway.git
 ```
