@@ -15,12 +15,11 @@ mkdir src
 ### Serial:
 ```
 cd ~/bwi_ros2
-git clone https://github.com/utexas-bwi/serial_for_ros2.git
+git clone https://github.com/utexas-bwi/serial.git
 ```
-move 'serial' folder out of the 'serial_for_ros2' package and delete the 'serial_for_ros2' package
+
 ```
 cd serial
-rm -rf build
 mkdir build
 cd build
 cmake ..
