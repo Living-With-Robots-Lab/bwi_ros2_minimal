@@ -32,9 +32,23 @@ cd ~/bwi_ros2/src
 git clone --branch humble https://github.com/microsoft/Azure_Kinect_ROS_Driver.git
 ```
 
-### bwi_ros2_common
+### ROS2 common packages
 ```
 cd ~/bwi_ros2/src
+mkdir lidar
+cd lidar
+
+git clone https://github.com/utexas-bwi/scan_filter.git
+git clone https://github.com/utexas-bwi/urg_node2.git
+git clone https://github.com/utexas-bwi/segway_msgs.git
+
+```
+for V4s and V5s:
+```
+git clone https://github.com/utexas-bwi/ros2_laser_scan_merger.git
+git clone https://github.com/ros-drivers/velodyne.git
+```
+REMOVE THIS PLEASE >>
 git clone https://github.com/utexas-bwi/bwi_ros2_common.git
 ```
 
