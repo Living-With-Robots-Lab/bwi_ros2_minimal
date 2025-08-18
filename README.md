@@ -1,5 +1,7 @@
 # bwi_ros2_minimal
 
+#### Note: make sure your account is in a 'dialout' group. Contact admin if not sure.
+
 Create a ros2 workspace using:
 ```
 echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
