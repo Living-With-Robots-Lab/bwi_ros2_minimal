@@ -1,6 +1,6 @@
 # bwi_ros2_minimal
 
-Please create a ros2 workspace using:
+Create a ros2 workspace using:
 ```
 echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 mkdir bwi_ros2
@@ -32,7 +32,13 @@ cd ~/bwi_ros2/src
 git clone --branch humble https://github.com/microsoft/Azure_Kinect_ROS_Driver.git
 ```
 
-### ROS2 common packages
+### ROS2 packages
+```
+cd ~/bwi_ros2/src
+git clone https://github.com/utexas-bwi/segway_msgs.git
+git clone https://github.com/utexas-bwi/bwi_ros2_description.git
+git clone https://github.com/utexas-bwi/bwi_ros2_common.git
+```
 ```
 cd ~/bwi_ros2/src
 mkdir lidar
@@ -40,16 +46,12 @@ cd lidar
 
 git clone https://github.com/utexas-bwi/scan_filter.git
 git clone https://github.com/utexas-bwi/urg_node2.git
-git clone https://github.com/utexas-bwi/segway_msgs.git
-
 ```
-for V4s and V5s:
+for v4s and v5s:
 ```
+cd ~/bwi_ros2/src/lidar
 git clone https://github.com/utexas-bwi/ros2_laser_scan_merger.git
 git clone https://github.com/ros-drivers/velodyne.git
-```
-REMOVE THIS PLEASE >>
-git clone https://github.com/utexas-bwi/bwi_ros2_common.git
 ```
 
 ### (BWIBOTs V2s only) segway drivers:
@@ -61,6 +63,7 @@ git clone https://github.com/utexas-bwi/segway_rmp_ros2.git
 ```
 
 ### (BWIBOTs V4s and V5s only) segway drivers:
+
 ```
 pip install pyserial
 cd ~/bwi_ros2/src
@@ -70,10 +73,8 @@ git clone https://github.com/Living-With-Robots-Lab/ros2segway.git
 ### other packages:
 ```
 cd ~/bwi_ros2/src
-git clone https://github.com/utexas-bwi/convex_decomposition_ros2.git
-mv convex_decomposition_ros2/ convex_decomposition
-git clone https://github.com/utexas-bwi/ivcon-ros2.git
-mv ivcon-ros2/ ivcon
+git clone https://github.com/utexas-bwi/convex_decomposition.git
+git clone https://github.com/utexas-bwi/ivcon.git
 ```
 ## Build
 
