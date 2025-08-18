@@ -45,7 +45,7 @@ mkdir lidar
 cd lidar
 
 git clone https://github.com/utexas-bwi/scan_filter.git
-git clone https://github.com/utexas-bwi/urg_node2.git
+git clone --recursive https://github.com/utexas-bwi/urg_node2.git
 ```
 for v4s and v5s:
 ```
