@@ -78,6 +78,13 @@ cd ~/bwi_ros2/src
 git clone https://github.com/utexas-bwi/convex_decomposition.git
 git clone https://github.com/utexas-bwi/ivcon.git
 ```
+
+### Visit Door list ### 
+```
+cd ~/bwi_ros2/src
+git clone https://github.com/Living-With-Robots-Lab/bwi_tasks.git
+```
+
 ## Build
 
 ```
@@ -103,5 +110,9 @@ V4s and v5s: use segbot_v4 or segbot_v5 above
 ros2 launch azure_kinect_ros_driver driver.launch.py
 ```
 
+### Run visit door list
+```
+ros2 run bwi_tasks visit_door_list
+```
 
 
